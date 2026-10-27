@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Kopia zapasowa Androida (API 23-30).
+
+  Wykluczamy przepisak_secrets: te preferencje są zaszyfrowane kluczem z
+  Android Keystore, który nie przenosi się na inne urządzenie. Przywrócony plik
+  byłby nieodczytywalny, więc lepiej, żeby użytkownik po prostu wpisał klucze
+  ponownie. Właściwą kopią przepisów jest Supabase (RF-15).
+-->
+<full-backup-content>
+    <exclude domain="sharedpref" path="przepisak_secrets.xml" />
+    <exclude domain="sharedpref" path="przepisak_secrets_fallback.xml" />
+</full-backup-content>

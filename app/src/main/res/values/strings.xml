@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Przepisak</string>
+    <string name="share_target_label">Zapisz przepis w Przepisaku</string>
+
+    <!-- Nawigacja -->
+    <string name="tab_recipes">Przepisy</string>
+    <string name="tab_tools">Narzędzia</string>
+    <string name="tab_settings">Ustawienia</string>
+
+    <!-- Akcje wspólne -->
+    <string name="action_save">Zapisz</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_edit">Edytuj</string>
+    <string name="action_add">Dodaj</string>
+    <string name="action_retry">Ponów</string>
+    <string name="action_back">Wstecz</string>
+    <string name="action_close">Zamknij</string>
+    <string name="action_ok">OK</string>
+    <string name="action_search">Szukaj</string>
+    <string name="action_clear">Wyczyść</string>
+    <string name="action_undo">Cofnij</string>
+    <string name="action_duplicate">Duplikuj</string>
+    <string name="action_share">Udostępnij</string>
+    <string name="action_more">Więcej</string>
+    <string name="action_move_up">Przenieś w górę</string>
+    <string name="action_move_down">Przenieś w dół</string>
+    <string name="action_favorite">Dodaj do ulubionych</string>
+    <string name="action_unfavorite">Usuń z ulubionych</string>
+    <string name="favorite_mark">W ulubionych</string>
+
+    <!-- Trudność -->
+    <string name="difficulty_easy">Łatwy</string>
+    <string name="difficulty_medium">Średni</string>
+    <string name="difficulty_hard">Trudny</string>
+    <string name="difficulty_label">Poziom trudności</string>
+
+    <!-- Odznaki -->
+    <string name="servings_format">%1$d porcji</string>
+    <string name="rating_label">Ocena</string>
+
+    <!-- Komunikaty błędów (AppError) -->
+    <string name="error_no_network">Brak połączenia z internetem. Sprawdź sieć i spróbuj ponownie.</string>
+    <string name="error_http">Serwer odpowiedział błędem (%1$s).</string>
+    <string name="error_parsing_failed">Nie udało się odczytać przepisu z tej strony.</string>
+    <string name="error_parsing_failed_detail">Nie udało się odczytać przepisu z tej strony (%1$s).</string>
+    <string name="error_missing_gemini_key">Brak klucza Gemini API. Wpisz go w Ustawieniach → Import AI.</string>
+    <string name="error_gemini_invalid">Model zwrócił odpowiedź, której nie udało się odczytać. Spróbuj ponownie.</string>
+    <string name="error_gemini_quota">Wyczerpany darmowy limit Gemini API. Spróbuj później.</string>
+    <string name="error_supabase_not_configured">Kopia zapasowa nie jest skonfigurowana. Uzupełnij dane w Ustawieniach.</string>
+    <string name="error_not_authenticated">Nie jesteś zalogowany do Supabase.</string>
+    <string name="error_supabase_schema_missing">Nie znaleziono tabeli ani kubełka na zdjęcia w Twoim projekcie Supabase. Uruchom skrypt supabase/schema.sql w SQL Editorze tego projektu.</string>
+    <string name="error_unsupported_url">Nie potrafię zaimportować przepisu z tego adresu.</string>
+    <string name="error_no_transcript">Ten film nie ma napisów ani opisu, z którego dałoby się odczytać przepis.</string>
+    <string name="error_image_processing">Nie udało się przetworzyć zdjęcia.</string>
+    <string name="error_storage">Błąd zapisu danych na urządzeniu.</string>
+    <string name="error_unknown">Wystąpił nieoczekiwany błąd.</string>
+
+    <!-- Lista przepisów -->
+    <string name="list_title">Przepisy</string>
+    <string name="list_search_hint">Szukaj po nazwie lub składniku</string>
+    <string name="list_filters">Filtry</string>
+    <string name="list_only_favorites">Ulubione</string>
+    <string name="list_all_categories">Wszystkie</string>
+    <string name="list_toggle_view">Przełącz widok listy/siatki</string>
+    <string name="list_empty_title">Nie masz jeszcze żadnego przepisu</string>
+    <string name="list_empty_message">Dodaj przepis ręcznie albo udostępnij Przepisakowi link ze strony czy z YouTube’a.</string>
+    <string name="list_empty_action">Dodaj pierwszy przepis</string>
+    <string name="list_no_results_title">Brak wyników</string>
+    <string name="list_no_results_message">Żaden przepis nie pasuje do wyszukiwania i filtrów.</string>
+    <string name="list_no_results_action">Wyczyść filtry</string>
+    <string name="list_deleted_snackbar">Przepis usunięty</string>
+    <string name="list_timers_badge">Aktywne minutniki: %1$d</string>
+    <string name="list_add_recipe">Nowy przepis</string>
+    <string name="list_add_title">Dodaj przepis</string>
+    <string name="list_add_manual">Dodaj ręcznie</string>
+    <string name="list_add_paste">Wklej ze schowka</string>
+    <string name="list_add_import">Import AI</string>
+    <string name="list_paste_empty">Schowek jest pusty — skopiuj przepis i spróbuj ponownie.</string>
+    <string name="list_sort">Sortowanie</string>
+    <string name="sort_recent">Ostatnio zmieniane</string>
+    <string name="sort_title">Alfabetycznie</string>
+    <string name="sort_time">Najszybsze</string>
+    <string name="sort_rating">Najlepiej oceniane</string>
+    <string name="filter_tags">Tagi</string>
+    <string name="filter_max_time">Maksymalny czas</string>
+    <string name="filter_max_time_any">Bez ograniczeń</string>
+    <string name="filter_min_rating">Minimalna ocena</string>
+    <string name="filter_apply">Pokaż</string>
+    <string name="filter_delete_confirm_title">Usunąć przepis?</string>
+    <string name="filter_delete_confirm_text">Przepis „%1$s” zniknie z listy. Będziesz mógł go przywrócić bezpośrednio po usunięciu.</string>
+
+    <!-- Szczegóły przepisu -->
+    <string name="detail_ingredients">Składniki</string>
+    <string name="detail_steps">Przygotowanie</string>
+    <string name="detail_notes">Notatki</string>
+    <string name="detail_notes_empty">Dotknij, aby dopisać własne uwagi</string>
+    <string name="detail_source">Źródło</string>
+    <string name="detail_cook">Gotuj</string>
+    <string name="detail_step_number">Krok %1$d</string>
+    <string name="detail_optional">opcjonalnie</string>
+    <string name="detail_pan_calculator">Kalkulator form</string>
+    <string name="detail_timer_started">Minutnik uruchomiony: %1$s</string>
+    <string name="detail_no_browser">Nie znaleziono aplikacji, która otworzy ten adres.</string>
+    <string name="detail_not_found">Nie znaleziono przepisu.</string>
+    <string name="detail_prep_time">Przygotowanie</string>
+    <string name="detail_cook_time">Pieczenie / gotowanie</string>
+
+    <!-- Skalowanie porcji -->
+    <string name="scaler_reset">Przywróć oryginał</string>
+    <string name="scaler_factor">Przeliczone ×%1$s</string>
+    <string name="scaler_no_servings">Ten przepis nie podaje liczby porcji — użyj mnożnika.</string>
+    <string name="scaler_pan_factor">Z kalkulatora form: ×%1$s</string>
+
+    <!-- Edycja -->
+    <string name="edit_title_new">Nowy przepis</string>
+    <string name="edit_title_existing">Edycja przepisu</string>
+    <string name="edit_section_basics">Podstawy</string>
+    <string name="edit_field_title">Nazwa przepisu</string>
+    <string name="edit_field_description">Krótki opis</string>
+    <string name="edit_field_prep_time">Przygotowanie (min)</string>
+    <string name="edit_field_cook_time">Pieczenie / gotowanie (min)</string>
+    <string name="edit_field_servings">Liczba porcji</string>
+    <string name="edit_field_servings_label">Nazwa porcji</string>
+    <string name="edit_field_category">Kategoria</string>
+    <string name="edit_field_tags">Tagi</string>
+    <string name="edit_field_source">Adres źródłowy</string>
+    <string name="edit_add_tag">Dodaj tag</string>
+    <string name="edit_add_group">Dodaj grupę składników</string>
+    <string name="edit_group_name">Nazwa grupy (np. Ciasto)</string>
+    <string name="edit_add_ingredient">Dodaj składnik</string>
+    <string name="edit_add_step">Dodaj krok</string>
+    <string name="edit_paste_ingredients">Wklej listę składników</string>
+    <string name="edit_paste_hint">Wklej albo przepisz składniki — po jednym w linii. Rozpoznam ilości i jednostki.</string>
+    <string name="edit_ingredient_amount">Ilość</string>
+    <string name="edit_ingredient_unit">Jednostka</string>
+    <string name="edit_ingredient_name">Składnik</string>
+    <string name="edit_ingredient_note">Uwaga</string>
+    <string name="edit_ingredient_optional">Opcjonalny</string>
+    <string name="edit_ingredient_not_scalable">Nie skaluj</string>
+    <string name="edit_step_text">Opis kroku</string>
+    <string name="edit_step_timer">Minutnik (min)</string>
+    <string name="edit_photo_add">Dodaj zdjęcie</string>
+    <string name="edit_photo_gallery">Z galerii</string>
+    <string name="edit_photo_camera">Zrób zdjęcie</string>
+    <string name="edit_photo_remove">Usuń zdjęcie</string>
+    <string name="edit_error_title_required">Nazwa przepisu jest wymagana.</string>
+    <string name="edit_discard_title">Porzucić zmiany?</string>
+    <string name="edit_discard_text">Wprowadzone zmiany nie zostaną zapisane.</string>
+    <string name="edit_discard_confirm">Porzuć</string>
+    <string name="edit_group_default">Składniki</string>
+
+    <!-- Tryb gotowania -->
+    <string name="cook_step_progress">Krok %1$d z %2$d</string>
+    <string name="cook_next">Dalej</string>
+    <string name="cook_finish">Gotowe</string>
+    <string name="cook_previous">Wstecz</string>
+    <string name="cook_show_ingredients">Składniki</string>
+    <string name="cook_start_timer">Uruchom minutnik</string>
+    <string name="cook_exit_title">Zakończyć gotowanie?</string>
+    <string name="cook_exit_text">Masz uruchomione minutniki. Chcesz je zostawić włączone?</string>
+    <string name="cook_exit_keep">Zostaw minutniki</string>
+    <string name="cook_exit_stop">Zatrzymaj wszystkie</string>
+    <string name="cook_finished">To już wszystko. Smacznego!</string>
+
+    <!-- Minutniki -->
+    <string name="timers_title">Minutniki</string>
+    <string name="timers_empty_title">Żaden minutnik nie działa</string>
+    <string name="timers_empty_message">Minutniki możesz uruchomić z kroków przepisu albo dodać własny.</string>
+    <string name="timers_add">Nowy minutnik</string>
+    <string name="timers_stop_all">Zatrzymaj wszystkie</string>
+    <string name="timers_done">Gotowe!</string>
+    <string name="timer_pause">Pauza</string>
+    <string name="timer_resume">Wznów</string>
+    <string name="timer_stop">Zatrzymaj</string>
+    <string name="timer_add_minute">+1 min</string>
+    <string name="timer_name">Nazwa minutnika</string>
+    <string name="timer_minutes">Minuty</string>
+    <string name="timer_seconds">Sekundy</string>
+    <string name="timer_channel_name">Minutniki</string>
+    <string name="timer_channel_description">Trwałe powiadomienie z odliczaniem</string>
+    <string name="timer_alert_channel_name">Koniec minutnika</string>
+    <string name="timer_alert_channel_description">Sygnał, gdy minutnik dobiegnie końca</string>
+    <string name="sync_channel_name">Synchronizacja</string>
+    <string name="sync_channel_description">Informacje o kopii zapasowej</string>
+    <string name="timer_default_label">Minutnik</string>
+
+    <!-- Narzędzia -->
+    <string name="tools_title">Narzędzia</string>
+    <string name="tools_pan_title">Kalkulator form</string>
+    <string name="tools_pan_subtitle">Przelicz proporcje między tortownicą, blachą i formą z kominem.</string>
+    <string name="tools_weight_title">Objętość na wagę</string>
+    <string name="tools_weight_subtitle">Ile waży szklanka mąki, łyżka cukru czy łyżeczka kakao.</string>
+    <string name="tools_timers_subtitle">Uruchom i pilnuj kilku minutników naraz.</string>
+
+    <string name="pan_source">Mam formę</string>
+    <string name="pan_target">Chcę użyć</string>
+    <string name="pan_shape_round">Okrągła</string>
+    <string name="pan_shape_rectangle">Prostokątna</string>
+    <string name="pan_shape_ring">Z kominem</string>
+    <string name="pan_diameter">Średnica (cm)</string>
+    <string name="pan_inner_diameter">Średnica komina (cm)</string>
+    <string name="pan_length">Długość (cm)</string>
+    <string name="pan_width">Szerokość (cm)</string>
+    <string name="pan_height">Wysokość (cm, opcjonalnie)</string>
+    <string name="pan_presets">Gotowe rozmiary</string>
+    <string name="pan_result_factor">×%1$s</string>
+    <string name="pan_result_hint">Pomnóż wszystkie składniki przez %1$s.</string>
+    <string name="pan_result_areas">Powierzchnia: %1$s cm² → %2$s cm²</string>
+    <string name="pan_result_volume">Objętościowo: ×%1$s</string>
+    <string name="pan_result_volume_hint">Współczynnik objętościowy mówi, ile ciasta zmieści się w formie. Do przeliczania składników używaj współczynnika powierzchni — decyduje on o grubości ciasta, a więc i o czasie pieczenia.</string>
+    <string name="pan_incomplete">Uzupełnij wymiary obu form, żeby zobaczyć przelicznik.</string>
+
+    <string name="weight_search_hint">Szukaj produktu</string>
+    <string name="weight_amount">Ilość</string>
+    <string name="weight_unit">Jednostka</string>
+    <string name="weight_result_grams">%1$s g</string>
+    <string name="weight_estimated">Wartość przybliżona — policzona z gęstości produktu. Mąka nasypana waży więcej niż przesiana.</string>
+    <string name="weight_direction_to_grams">Objętość → waga</string>
+    <string name="weight_direction_to_volume">Waga → objętość</string>
+    <string name="weight_grams_input">Gramy</string>
+    <string name="weight_quick_table">Szybki podgląd</string>
+    <string name="weight_popular">Popularne produkty</string>
+    <string name="weight_no_results">Nie znalazłem takiego produktu w bazie wagowej.</string>
+    <string name="weight_result_volume">%1$s %2$s</string>
+
+    <!-- Ustawienia -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_section_appearance">Wygląd</string>
+    <string name="settings_theme">Motyw</string>
+    <string name="settings_theme_system">Jak w systemie</string>
+    <string name="settings_theme_light">Jasny</string>
+    <string name="settings_theme_dark">Ciemny</string>
+    <string name="settings_dynamic_color">Kolory z tapety</string>
+    <string name="settings_kitchen_scale">Powiększenie czcionki w trybie gotowania</string>
+    <string name="settings_kitchen_scale_preview">Tak będzie wyglądał krok przepisu.</string>
+    <string name="settings_keep_screen_on">Nie wygaszaj ekranu podczas gotowania</string>
+
+    <string name="settings_section_ai">Import AI</string>
+    <string name="settings_gemini_key">Klucz Gemini API</string>
+    <string name="settings_gemini_model">Model</string>
+    <string name="settings_gemini_test">Sprawdź połączenie</string>
+    <string name="settings_gemini_ok">Połączenie działa (%1$s).</string>
+    <string name="settings_gemini_hint">Darmowy klucz wygenerujesz w Google AI Studio. Klucz jest zapisywany w zaszyfrowanych preferencjach i nie opuszcza urządzenia inaczej niż w zapytaniu do Google. Import ze stron z danymi Schema.org działa również bez klucza.</string>
+    <string name="settings_show_secret">Pokaż</string>
+    <string name="settings_hide_secret">Ukryj</string>
+
+    <string name="settings_section_backup">Kopia zapasowa</string>
+    <string name="settings_supabase_url">Adres projektu Supabase</string>
+    <string name="settings_supabase_key">Klucz anon</string>
+    <string name="settings_email">E-mail</string>
+    <string name="settings_password">Hasło</string>
+    <string name="settings_sign_in">Zaloguj</string>
+    <string name="settings_sign_up">Utwórz konto</string>
+    <string name="settings_sign_out">Wyloguj</string>
+    <string name="settings_signed_in_as">Zalogowany jako %1$s</string>
+    <string name="settings_signed_out">Nie jesteś zalogowany</string>
+    <string name="settings_auto_sync">Synchronizuj automatycznie</string>
+    <string name="settings_wifi_only">Tylko przez Wi-Fi</string>
+    <string name="settings_sync_now">Synchronizuj teraz</string>
+    <string name="settings_pending_changes">Zmiany do wysłania: %1$d</string>
+    <string name="settings_last_sync">Ostatnia synchronizacja: %1$s</string>
+    <string name="settings_last_sync_never">jeszcze nie synchronizowano</string>
+    <string name="settings_sync_success">Wysłano %1$d, pobrano %2$d.</string>
+    <string name="settings_backup_hint">Skrypt zakładający tabelę i kubełek na zdjęcia znajdziesz w pliku supabase/schema.sql w repozytorium projektu.</string>
+
+    <string name="settings_section_photos">Zdjęcia</string>
+    <string name="settings_photo_dimension">Maksymalny wymiar</string>
+    <string name="settings_photo_size">Docelowy rozmiar pliku</string>
+    <string name="settings_photo_dimension_value">%1$d px</string>
+    <string name="settings_photo_size_value">%1$d kB</string>
+
+    <string name="settings_section_timers">Minutniki</string>
+    <string name="settings_exact_alarm_warning">Bez zgody na dokładne alarmy minutnik może zadzwonić z opóźnieniem.</string>
+    <string name="settings_exact_alarm_action">Otwórz ustawienia systemowe</string>
+    <string name="settings_notifications_warning">Bez zgody na powiadomienia nie zobaczysz sygnału minutnika.</string>
+
+    <string name="settings_section_about">O aplikacji</string>
+    <string name="settings_version">Wersja %1$s</string>
+    <string name="settings_recipe_count">Przepisów w bazie: %1$d</string>
+    <string name="settings_about_text">Przepisak działa offline — przepisy są zapisane na urządzeniu, a chmura służy tylko jako kopia zapasowa.</string>
+
+    <string name="settings_section_debug">Narzędzia deweloperskie</string>
+    <string name="settings_cookmate_import_action">Import z Cookmate (.mcb)</string>
+    <string name="settings_cookmate_import_result">Zaimportowano %1$d z %2$d przepisów (%3$d bez zdjęcia)</string>
+
+    <!-- Import -->
+    <string name="import_title">Import przepisu</string>
+    <string name="import_paste_title">Zaimportuj przepis</string>
+    <string name="import_paste_label">Wklej link albo tekst przepisu</string>
+    <string name="import_paste_confirm">Importuj</string>
+    <string name="import_stage_fetching">Pobieram stronę…</string>
+    <string name="import_stage_parsing">Czytam dane strukturalne…</string>
+    <string name="import_stage_transcript">Pobieram napisy z filmu…</string>
+    <string name="import_stage_gemini">Pytam Gemini o przepis…</string>
+    <string name="import_stage_saving">Zapisuję…</string>
+    <string name="import_save">Zapisz</string>
+    <string name="import_save_and_edit">Zapisz i edytuj</string>
+    <string name="import_no_url">W udostępnionym tekście nie ma adresu do zaimportowania.</string>
+    <string name="import_saved">Przepis zapisany</string>
+    <string name="import_ingredients_count">Składniki (%1$d)</string>
+    <string name="import_steps_count">Kroki (%1$d)</string>
+    <string name="import_strategy_jsonld">Odczytano dane strukturalne Schema.org</string>
+    <string name="import_strategy_microdata">Odczytano mikrodane ze strony</string>
+    <string name="import_strategy_gemini_html">Rozpoznano przez Gemini z treści strony</string>
+    <string name="import_strategy_gemini_transcript">Rozpoznano przez Gemini z napisów filmu</string>
+    <string name="import_strategy_gemini_description">Rozpoznano przez Gemini z opisu filmu</string>
+    <string name="import_strategy_gemini_text">Rozpoznano przez Gemini z wklejonego tekstu</string>
+    <string name="import_strategy_cookmate">Zaimportowano z pliku Cookmate</string>
+    <string name="import_warnings">Uwagi</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kolory dla zasobów XML (motyw startowy, ikona). Paleta Compose żyje w Color.kt. -->
+    <color name="terracotta">#FFB4552F</color>
+    <color name="cream">#FFFFF8F4</color>
+    <color name="charcoal">#FF1A120E</color>
+    <color name="ic_launcher_background">#FFB4552F</color>
+</resources>

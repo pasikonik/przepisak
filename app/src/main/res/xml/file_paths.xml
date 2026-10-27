@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Ścieżki udostępniane aparatowi przez FileProvider. Katalog musi odpowiadać
+  temu, co zwraca PhotoPaths.photosDir() — czyli filesDir/photos.
+-->
+<paths>
+    <files-path name="photos" path="photos/" />
+</paths>

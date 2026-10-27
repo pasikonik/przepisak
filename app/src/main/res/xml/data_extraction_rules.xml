@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Odpowiednik backup_rules dla API 31+. Uzasadnienie wykluczeń: patrz backup_rules.xml. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="przepisak_secrets.xml" />
+        <exclude domain="sharedpref" path="przepisak_secrets_fallback.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="przepisak_secrets.xml" />
+        <exclude domain="sharedpref" path="przepisak_secrets_fallback.xml" />
+    </device-transfer>
+</data-extraction-rules>

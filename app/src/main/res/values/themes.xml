@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Motyw bazowy. Dziedziczymy po Theme.Material.Light.NoActionBar, a nie po
+      AppCompat: aktywności to ComponentActivity, całe UI rysuje Compose, więc
+      AppCompat byłby zbędnym ciężarem.
+    -->
+    <style name="Theme.Przepisak" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Ekran startowy: znika, gdy Compose wykona pierwszą kompozycję. -->
+    <style name="Theme.Przepisak.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/terracotta</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Przepisak</item>
+    </style>
+
+    <!-- Okno importu wywołane z „Udostępnij” — ma wyglądać jak nakładka, nie jak druga aplikacja. -->
+    <style name="Theme.Przepisak.Transparent" parent="Theme.Przepisak">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
